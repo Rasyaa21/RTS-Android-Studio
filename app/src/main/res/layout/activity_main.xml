@@ -37,7 +37,6 @@
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
             android:layout_height="wrap_content"/>
-
     </LinearLayout>
 
     <SearchView
@@ -51,6 +50,153 @@
         android:queryHint="What do you want to eat?"
         android:layout_height="0dp"/>
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="@id/guideCategoryTop"
+        app:layout_constraintBottom_toBottomOf="@id/guideCategoryBottom"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/myButton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/box_category" />
+
+            <TextView
+                android:id="@+id/myText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:fontFamily="@font/poppins_bold"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/myButton2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/box_category" />
+
+            <TextView
+                android:id="@+id/myText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foods"
+                android:fontFamily="@font/poppins_bold"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/myButton3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/box_category" />
+
+            <TextView
+                android:id="@+id/myText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drinks"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/myButton4"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/box_category" />
+
+            <TextView
+                android:id="@+id/myText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/snacks"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintTop_toTopOf="@id/BestTodayGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/BestTodayGuideBottom"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Best Today"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintTop_toTopOf="@id/RecyclerGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/RecyclerGuideBottom"
+        android:layout_height="0dp"/>
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -107,7 +253,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.465" />
+        app:layout_constraintGuide_percent="0.47" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/BestTodayGuideTop"
