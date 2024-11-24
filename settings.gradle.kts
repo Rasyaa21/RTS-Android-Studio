@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "tugas_nanda_joki"
+rootProject.name = "rts_cafe"
 include(":app")
  

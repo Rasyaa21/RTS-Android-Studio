@@ -1,4 +1,4 @@
-package com.rasya.tugas_nanda_joki
+package com.nanda.rts_cafe
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.rasya.tugas_nanda_joki", appContext.packageName)
+        assertEquals("com.rasya.rts_cafe", appContext.packageName)
     }
 }

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rasya.tugas_nanda_joki"
+    namespace = "com.nanda.rts_cafe"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rasya.tugas_nanda_joki"
+        applicationId = "com.nanda.rts_cafe"
         minSdk = 25
         targetSdk = 34
         versionCode = 1
