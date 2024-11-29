@@ -7,6 +7,10 @@ android {
     namespace = "com.nanda.rts_cafe"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.nanda.rts_cafe"
         minSdk = 25

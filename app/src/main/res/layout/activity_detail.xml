@@ -8,6 +8,19 @@
     android:background="@color/black"
     tools:context=".DetailActivity">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:background="@drawable/back_button_shape"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="415dp"
@@ -20,20 +33,22 @@
         app:layout_constraintVertical_bias="1.0" />
 
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/detail_image"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:background="@drawable/circle"
         android:scaleType="centerCrop"
         android:src="@drawable/foto"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintVertical_bias="0.846"
+        app:shapeAppearanceOverlay="@style/Circular" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="340dp"
         android:layout_height="446dp"
         android:gravity="center_horizontal"
@@ -46,12 +61,14 @@
         app:layout_constraintVertical_bias="0.973">
 
         <TextView
+            android:id="@+id/detail_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="Mie Ayam"
+            android:text="Spaghetti Bolognese"
             android:textColor="#FEAC17"
-            android:textSize="36sp" />
+            android:gravity="center"
+            android:textSize="32sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,6 +84,7 @@
                 android:text="15 min" />
 
             <TextView
+                android:id="@+id/detail_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
@@ -81,6 +99,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/detail_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -93,19 +112,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
+            android:layout_marginHorizontal="8dp"
             android:layout_marginTop="28dp"
             android:fontFamily="@font/poppins_bold"
-            android:layout_marginHorizontal="8dp"
             android:text="About"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
             android:layout_gravity="start"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Ini merupakan menu best seller dengan hidangan berupa daging ayam dengan kuah kaldu nya membuat menu ini di sukai banyak orang."
             android:textColor="@color/black"
@@ -113,14 +132,14 @@
 
         <Button
             android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="65dp"
             android:background="@drawable/button_detail"
             android:fontFamily="@font/poppins_bold"
             android:text="Add To Cart"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="65dp"
-            android:layout_height="55dp"/>
+            android:textColor="@color/white" />
 
 
     </LinearLayout>

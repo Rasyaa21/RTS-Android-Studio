@@ -36,6 +36,7 @@
 
             <Button
                 android:layout_width="0dp"
+                android:id="@+id/loginBt"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/white"
@@ -46,6 +47,7 @@
                 android:textSize="15dp" />
 
             <Button
+                android:id="@+id/signUpBt"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -136,6 +138,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/signUpBtToMain"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:autoSizeMaxTextSize="20sp"
@@ -192,7 +195,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                android:src="@drawable/Instagram_icon"
+                android:src="@drawable/instagram_icon"
                 app:layout_constraintDimensionRatio="1:1" />
 
             <ImageView
