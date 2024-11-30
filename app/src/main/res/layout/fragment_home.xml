@@ -44,6 +44,7 @@
         android:layout_height="0dp"
         android:background="@drawable/selection_design"
         android:queryHint="What do you want to eat?"
+        android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="@id/searchGuideBottom"
         app:layout_constraintEnd_toEndOf="@id/yGuide2"
         app:layout_constraintStart_toStartOf="@id/yGuide1"
@@ -68,8 +69,10 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <Button
+            <ImageButton
                 android:layout_width="55dp"
+                android:src="@drawable/allimage"
+                android:scaleType="centerCrop"
                 android:layout_height="55dp"
                 android:background="@drawable/box_category" />
 
@@ -92,7 +95,9 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <Button
+            <ImageButton
+                android:src="@drawable/foodbox"
+                android:scaleType="centerCrop"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:background="@drawable/box_category" />
@@ -116,7 +121,9 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <Button
+            <ImageButton
+                android:src="@drawable/drinksbox"
+                android:scaleType="centerCrop"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:background="@drawable/box_category" />
@@ -140,7 +147,9 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <Button
+            <ImageButton
+                android:src="@drawable/snacksbox"
+                android:scaleType="centerCrop"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:background="@drawable/box_category" />
@@ -172,6 +181,7 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/poppins_bold"
             android:text="Best Today"
+            android:textSize="24sp"
             android:textColor="@color/white" />
     </LinearLayout>
 
