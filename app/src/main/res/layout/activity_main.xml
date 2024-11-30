@@ -10,62 +10,62 @@
 
     <LinearLayout
         android:layout_width="0dp"
+        android:layout_height="0dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="@id/titleGuideTop"
         app:layout_constraintBottom_toBottomOf="@id/titleGuideBottom"
-        app:layout_constraintStart_toStartOf="@id/yGuide1"
         app:layout_constraintEnd_toEndOf="@id/yGuide2"
-        android:layout_height="0dp">
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/titleGuideTop">
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Hi Everyone!!"
+            android:layout_height="wrap_content"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeMinTextSize="13sp"
             android:autoSizeTextType="uniform"
-            android:textColor="@color/white"
             android:fontFamily="@font/poppins_light"
-            android:layout_height="wrap_content"/>
+            android:text="Hi Everyone!!"
+            android:textColor="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Order Your Food Here"
+            android:layout_height="wrap_content"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeMinTextSize="14sp"
             android:autoSizeTextType="uniform"
-            android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
-            android:layout_height="wrap_content"/>
+            android:text="Order Your Food Here"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <SearchView
-        android:layout_width="0dp"
-        android:background="@drawable/selection_design"
         style="style/style"
-        app:layout_constraintTop_toTopOf="@id/searchGuideTop"
-        app:layout_constraintBottom_toBottomOf="@id/searchGuideBottom"
-        app:layout_constraintStart_toStartOf="@id/yGuide1"
-        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selection_design"
         android:queryHint="What do you want to eat?"
-        android:layout_height="0dp"/>
+        app:layout_constraintBottom_toBottomOf="@id/searchGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/searchGuideTop" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="horizontal"
         android:gravity="center_horizontal"
-        app:layout_constraintTop_toTopOf="@id/guideCategoryTop"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@id/guideCategoryBottom"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
         app:layout_constraintStart_toStartOf="@id/yGuide1"
-        app:layout_constraintEnd_toEndOf="@id/yGuide2">
+        app:layout_constraintTop_toTopOf="@id/guideCategoryTop">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:orientation="vertical"
-            android:gravity="center"
             android:layout_height="wrap_content"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/myButton"
@@ -77,21 +77,21 @@
                 android:id="@+id/myText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="All"
+                android:background="@android:color/transparent"
                 android:fontFamily="@font/poppins_bold"
+                android:text="All"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:background="@android:color/transparent" />
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:orientation="vertical"
-            android:gravity="center"
             android:layout_height="wrap_content"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/myButton2"
@@ -103,23 +103,23 @@
                 android:id="@+id/myText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Foods"
+                android:background="@android:color/transparent"
                 android:fontFamily="@font/poppins_bold"
+                android:text="Foods"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:background="@android:color/transparent" />
+                android:textStyle="bold" />
 
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:orientation="vertical"
-            android:gravity="center"
             android:layout_height="wrap_content"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/myButton3"
@@ -131,23 +131,23 @@
                 android:id="@+id/myText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Drinks"
                 android:textAllCaps="false"
-                android:fontFamily="@font/poppins_bold"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:background="@android:color/transparent" />
+                android:textStyle="bold" />
 
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/myButton4"
@@ -159,44 +159,44 @@
                 android:id="@+id/myText4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/snacks"
                 android:textAllCaps="false"
-                android:fontFamily="@font/poppins_bold"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:background="@android:color/transparent" />
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
+        android:layout_height="0dp"
         android:gravity="center_vertical"
-        app:layout_constraintStart_toStartOf="@id/yGuide1"
-        app:layout_constraintEnd_toEndOf="@id/yGuide2"
-        app:layout_constraintTop_toTopOf="@id/BestTodayGuideTop"
         app:layout_constraintBottom_toBottomOf="@id/BestTodayGuideBottom"
-        android:layout_height="0dp">
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/BestTodayGuideTop">
 
         <TextView
             android:layout_width="match_parent"
-            android:text="Best Today"
+            android:layout_height="match_parent"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeMinTextSize="16sp"
             android:autoSizeTextType="uniform"
             android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/white"
-            android:layout_height="match_parent"/>
+            android:text="Best Today"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
-        app:layout_constraintStart_toStartOf="@id/yGuide1"
-        app:layout_constraintEnd_toEndOf="@id/yGuide2"
-        app:layout_constraintTop_toTopOf="@id/RecyclerGuideTop"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@id/RecyclerGuideBottom"
-        android:layout_height="0dp"/>
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/RecyclerGuideTop" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -204,14 +204,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.08" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/yGuide2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.92" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/titleGuideTop"
@@ -274,7 +274,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.605" />
+        app:layout_constraintGuide_percent="0.61" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/RecyclerGuideBottom"
@@ -282,4 +282,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:menu="@menu/navbar_menu"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92612857" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

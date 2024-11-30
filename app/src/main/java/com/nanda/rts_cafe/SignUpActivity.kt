@@ -26,6 +26,7 @@ class SignUpActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             Log.d("SignUpActivity", "Login button clicked")
             startActivity(intent)
+            finish()
         }
     }
 }

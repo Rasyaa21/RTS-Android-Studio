@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = GridLayoutManager(this, 2) // 2 items per row
 
         // Add spacing between items
-        val spacing = 16 // 16dp spacing
+        val spacing = 2 // 16dp spacing
         recyclerView.addItemDecoration(object : RecyclerView.ItemDecoration() {
             override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
                 outRect.set(spacing, spacing, spacing, spacing)
