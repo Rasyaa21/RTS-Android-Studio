@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwhite"
+    tools:context=".SuccessActivity">
+
+  <LinearLayout
+      android:layout_width="410dp"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_height="403dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/imageView3"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintVertical_bias="1.0">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:src="@drawable/checklist"
+        android:layout_height="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="PAYMENT SUCCESS"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Your Order"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Will Arrive in 20 - 30 Minutes"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="357dp"
+      android:layout_height="303dp"
+      android:src="@drawable/cooking"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.466"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

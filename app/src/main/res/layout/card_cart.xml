@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/cartItemImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/foto" />
+
+        <!-- Details Section -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cartItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Spaghetti Bolognese"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cartItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="32.000 IDR"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Quantity Selector -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/btnDecreaseQuantity"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@drawable/baseline_remove_24"
+                    android:contentDescription="Decrease quantity" />
+
+                <TextView
+                    android:id="@+id/cartItemQuantity"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/btnIncreaseQuantity"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@drawable/add"
+                    android:contentDescription="Increase quantity" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Remove Button -->
+        <ImageView
+            android:id="@+id/btnRemoveItem"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="top"
+            android:padding="4dp"
+            android:src="@drawable/baseline_delete_24"
+            android:contentDescription="Remove item" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

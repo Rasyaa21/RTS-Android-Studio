@@ -7,5 +7,89 @@
     android:background="@drawable/backgroundwhite"
     tools:context=".Fragments.CartFragment">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:text="Cart Items"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rcViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rcViewBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttomGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttomGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/yGuide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/yGuide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/rcViewTop"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintBottom_toBottomOf="@id/rcViewBottom"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <Button
+        android:layout_width="0dp"
+        android:id="@+id/checkoutButton"
+        app:layout_constraintTop_toTopOf="@id/buttomGuideTop"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:background="#FEAC17"
+        android:textSize="16dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/buttomGuideBottom"
+        android:layout_height="0dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

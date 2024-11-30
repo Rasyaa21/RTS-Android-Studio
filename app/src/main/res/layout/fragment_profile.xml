@@ -12,11 +12,12 @@
         android:id="@+id/detail_image2"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="184dp"
         android:scaleType="centerCrop"
         android:src="@drawable/logo_rts"
         android:translationZ="1dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/Circular" />
@@ -38,9 +39,9 @@
         android:layout_height="0dp"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="16dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="vertical"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/detail_image2"
@@ -49,110 +50,122 @@
         <!-- First box with two texts -->
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginHorizontal="16dp"
             android:background="@drawable/box_category"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/baseline_local_phone_24"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category 1"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="085702135810"
                 android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:gravity="center"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Subcategory 1"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:gravity="center"/>
+                android:textSize="20sp" />
         </LinearLayout>
 
         <!-- Second box with two texts -->
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
             android:background="@drawable/box_category"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/baseline_camera_alt_24"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category 2"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="rts.cafe"
                 android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:gravity="center"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Subcategory 2"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:gravity="center"/>
+                android:textSize="20sp" />
         </LinearLayout>
 
         <!-- Third box with two texts -->
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
             android:background="@drawable/box_category"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/baseline_info_outline_24"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category 3"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="About Us"
                 android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:gravity="center"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Subcategory 3"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:gravity="center"/>
+                android:textSize="20sp" />
         </LinearLayout>
 
         <!-- Fourth box with two texts -->
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
             android:background="@drawable/box_category"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/baseline_logout_24"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category 4"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Log Out"
                 android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:gravity="center"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Subcategory 4"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:gravity="center"/>
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -162,5 +175,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="333dp" />
+        app:layout_constraintGuide_begin="301dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

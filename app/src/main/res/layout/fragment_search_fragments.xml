@@ -1,12 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundwhite"
-    tools:context=".Fragments.SearchFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.HomeFragment"
+    android:background="@drawable/backgroundwhite">
 
-    <!-- Add your views here -->
+    <!-- Welcome Text -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/titleGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/titleGuideTop">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_category"
+                android:paddingHorizontal="14dp"
+                android:layout_margin="4dp"
+                android:paddingVertical="4dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Es Teh"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_category"
+                android:paddingHorizontal="14dp"
+                android:layout_margin="4dp"
+                android:paddingVertical="4dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Nasi Goreng"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_category"
+                android:paddingHorizontal="14dp"
+                android:layout_margin="4dp"
+                android:paddingVertical="4dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Es Jeruk"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_category"
+                android:paddingHorizontal="14dp"
+                android:layout_margin="4dp"
+                android:paddingVertical="4dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Beef"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_category"
+                android:paddingHorizontal="14dp"
+                android:layout_margin="4dp"
+                android:paddingVertical="4dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Jus Jambu"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_category"
+                android:paddingHorizontal="14dp"
+                android:layout_margin="4dp"
+                android:paddingVertical="4dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Paket Ayam"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_category"
+                android:paddingHorizontal="14dp"
+                android:layout_margin="4dp"
+                android:paddingVertical="4dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Spaghetti"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        
+    </LinearLayout>
+
+    <!-- Search View -->
+    <LinearLayout
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/searchGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/searchGuideTop"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <SearchView
+            android:layout_width="298dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selection_design"
+            android:elevation="12dp"
+            android:padding="8dp"
+            android:queryHint="What do you want to eat?"
+            android:textColor="@android:color/darker_gray" />
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/circle_background"
+            android:elevation="12dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:src="@drawable/baseline_person_24" />
+
+        <!-- SearchView -->
+
+
+    </LinearLayout>
+
+
+    <!-- Categories -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/guideCategoryBottom"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/guideCategoryTop">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/banner"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:background="@drawable/box_category"
+            android:layout_height="match_parent"/>
+
+        
+        
+    </LinearLayout>
+
+    <!-- Best Today Section -->
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/RecyclerGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/RecyclerGuideTop" />
+
+    <!-- Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/yGuide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yGuide2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.255" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/searchGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/searchGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideCategoryTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideCategoryBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/RecyclerGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RecyclerGuideBottom"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

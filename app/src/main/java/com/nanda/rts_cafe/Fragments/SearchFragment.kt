@@ -1,64 +1,48 @@
 package com.nanda.rts_cafe.Fragments
 
-import android.content.ContentValues.TAG
+import android.graphics.Rect
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.appname.Adapter
 import com.nanda.rts_cafe.R
-import kotlin.math.log
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [SearchFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class SearchFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d(TAG, "search opened")
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search_fragments, container, false)
+        val view = inflater.inflate(R.layout.fragment_search_fragments, container, false)
+        setupRecyclerView(view)
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment SearchFragments.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SearchFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    private fun setupRecyclerView(view: View) {
+        val menuItems = listOf(
+            Adapter.MenuItem(R.drawable.foto, "Spaghetti Bolognese", "32.000 IDR", "5.2"),
+            Adapter.MenuItem(R.drawable.foto, "Lasagna", "45.000 IDR", "4.8"),
+            Adapter.MenuItem(R.drawable.foto, "Pizza", "60.000 IDR", "4.9")
+        )
+
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView.adapter = Adapter(menuItems)
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
+
+        val spacing = 2 // Adjust the spacing between items
+        recyclerView.addItemDecoration(object : RecyclerView.ItemDecoration() {
+            override fun getItemOffsets(
+                outRect: Rect,
+                view: View,
+                parent: RecyclerView,
+                state: RecyclerView.State
+            ) {
+                outRect.set(spacing, spacing, spacing, spacing)
             }
+        })
     }
 }
